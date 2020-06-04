@@ -23,3 +23,6 @@ a = pickle.load(file_2)
 file_2.close()
 print(a)
 print(pickle.loads(b))
+
+
+# it is as similar as json loads, load, dump and dumps.
