@@ -24,3 +24,30 @@ c.sellmin()
 # using setter function
 c.setMaxPrice(1000)
 c.sell()
+
+
+
+
+''''
+The Python interpreter rewrites any identifier with “__var” as “_ClassName__var”.
+ And using this you can access the class member from outside as well
+'''
+class Car:
+
+    def __init__(self,name,milage):
+
+        self.name = name
+        self._manufature = "TATA Group" #private
+        self.__owner = "Ratan Tata"
+        self.milage = milage
+
+    def owner_name(self):
+        return self.__owner
+
+
+
+car = Car("Tata",20)
+print(car.name)
+print(car._manufature)
+print(car._Car__owner) #mangled name
+print(car.owner_name())
