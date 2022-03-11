@@ -1,3 +1,7 @@
+''''
+encapulation is used to restrict data and to protect data
+'''
+
 class Computer:
 
     def __init__(self):
@@ -51,3 +55,4 @@ print(car.name)
 print(car._manufature)
 print(car._Car__owner) #mangled name
 print(car.owner_name())
+
