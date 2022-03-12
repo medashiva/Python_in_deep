@@ -9,3 +9,6 @@ for number in itertools.combinations(l,2):
         target_sum_list.append(number)
 
 print(target_sum_list)
+
+
+print(help(itertools))
